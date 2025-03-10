@@ -28,15 +28,15 @@ public class ElevatorSubsystem extends SubsystemBase {
     private XboxController xboxController;{
 
    
-        // Initialize the motor controller on CAN ID 1
-        elevator = new SparkMax(15, MotorType.kBrushed);
+        // Initialize the motor controller on CAN ID 13
+        elevator = new SparkMax(13, MotorType.kBrushed);
         
         // Initialize the motor controllers on their respective CAN IDs
-        leftIntakeMotor = new SparkMax(13, MotorType.kBrushless);
-        rightIntakeMotor = new SparkMax(14, MotorType.kBrushless);
+        leftIntakeMotor = new SparkMax(18, MotorType.kBrushless);
+        rightIntakeMotor = new SparkMax(17, MotorType.kBrushless);
         source = new SparkMax(16, MotorType.kBrushless);     
-        lever = new SparkMax(17, MotorType.kBrushless);
-        ball = new SparkMax(18, MotorType.kBrushless);  
+        lever = new SparkMax(15, MotorType.kBrushless);
+        ball = new SparkMax(14, MotorType.kBrushless);  
         
         // Initialize the Xbox controller on port 0
         xboxController = new XboxController(1);
